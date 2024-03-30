@@ -13,10 +13,10 @@ body {
 }
 
 .container-grafics {
-  background-color: gray;
+  background-color: rgb(255, 255, 255);
   max-width: 100rem;
-  min-width: 500px;
-  min-height: 8em;
+  min-width: 600px;
+  min-height: 10cem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -24,8 +24,8 @@ body {
 }
 
 .item-grafic {
-  width: 400px;
-  height: 300px;
+  width: 30rem;
+  height: 30rem;
   border: 1px solid rgb(97, 96, 96);
   margin: 5px;
   display: flex;

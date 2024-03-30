@@ -10,7 +10,8 @@ class Residencia {
           {
             label: title,
             data: data,
-            borderWidth: 1,
+            borderWidth: 3,
+            borderColor: "rgba(0, 0, 0)",
             backgroundColor: [
               "rgb(255, 99, 132)",
               "rgb(54, 162, 235)",
