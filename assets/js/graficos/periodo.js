@@ -1,9 +1,9 @@
-const ctx = document.getElementById("genero");
+const ctx = document.getElementById("periodo");
 
 class Periodo {
   getChat(labels, data, title) {
     new Chart(ctx, {
-      type: "doughnut",
+      type: "pie",
       data: {
         labels: labels,
         datasets: [

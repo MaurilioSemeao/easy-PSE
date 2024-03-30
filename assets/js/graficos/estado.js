@@ -1,9 +1,9 @@
-const ctx = document.getElementById("curso");
+const ctx = document.getElementById("estado");
 
-class Cusoso {
+class Estado {
   getChat(labels, data, title) {
     new Chart(ctx, {
-      type: "pie",
+      type: "bar",
       data: {
         labels: labels,
         datasets: [
@@ -11,7 +11,7 @@ class Cusoso {
             label: title,
             data: data,
             borderWidth: 1,
-            backgroundColor: ["#E3371E", "#0593A2"],
+            backgroundColor: ["#E3371E", "#0593A2", "#35FF56"],
           },
         ],
       },
@@ -26,4 +26,4 @@ class Cusoso {
   }
 }
 
-export default new Cusoso();
+export default new Estado();
