@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-grafics {
+  background-color: gray;
+  width: 1200px;
+  height: 800px;
+  display: flex;
+}
+
+.item-grafic {
+  width: 400px;
+  height: 300px;
+  border: 1px solid rgb(97, 96, 96);
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cidade {
+}
