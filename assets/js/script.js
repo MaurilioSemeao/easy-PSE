@@ -10,40 +10,35 @@ fetch("http://localhost:3333/")
     return response.json();
   })
   .then((data) => {
-    console.log(data.residencia.nome);
-    residencia.getChat(
-      data.residencia.nome,
-      data.residencia.quantidade,
-      "Residencia"
-    );
-    periodo.getChat(data.periodo.nome, data.periodo.quantidade, "Periodo");
-    genero.getChat(data.genero.nome, data.genero.quantidade, "Genero");
-    estado.getChat(data.estado.nome, data.estado.quantidade, "estado");
-    const faixaEtaruiaNome = [
-      data.faixaEtaria._18_20.nome,
-      data.faixaEtaria._21_30.nome,
-      data.faixaEtaria._31_40.nome,
-      data.faixaEtaria._41_.nome,
-    ];
+    const { residence, period, gender, states, salaryRange, ageRange } = data;
 
-    const faixaEtariaQuantidade = [
-      data.faixaEtaria._18_20.quantidade,
-      data.faixaEtaria._21_30.quantidade,
-      data.faixaEtaria._31_40.quantidade,
-      data.faixaEtaria._41_.quantidade,
-    ];
-    faixaEtaria.getChat(
-      faixaEtaruiaNome,
-      faixaEtariaQuantidade,
-      "Faixa Etaria"
-    );
-
+    residencia.getChat(residence.name, residence.amount, "Residencia");
+    periodo.getChat(period.name, period.amount, "Periodo");
+    genero.getChat(gender.name, gender.amount, "Genero");
+    estado.getChat(states.name, states.amount, "estado");
     faixaSalarial.getChat(
-      data.faixaSalarial.nome,
-      data.faixaSalarial.quantidade,
+      salaryRange.name,
+      salaryRange.amount,
       "Faixa Salarial"
     );
+
+    const nameAgeRange = [
+      ageRange._18_20.name,
+      ageRange._21_30.name,
+      ageRange._31_40.name,
+      ageRange._41_.name,
+    ];
+
+    const amountAgeRange = [
+      ageRange._18_20.amount,
+      ageRange._21_30.amount,
+      ageRange._31_40.amount,
+      ageRange._41_.amount,
+    ];
+
+    faixaEtaria.getChat(nameAgeRange, amountAgeRange, "Faixa Etaria");
   })
   .catch((error) => {
     console.log("erro");
   });
+("");

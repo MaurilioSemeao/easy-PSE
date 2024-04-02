@@ -4,12 +4,13 @@
   box-sizing: border-box;
 }
 body {
-  width: 100vw;
-  height: 100vh;
-  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.container-header {
+  background-color: rgb(134, 27, 27);
 }
 
 .container-grafics {
@@ -19,6 +20,7 @@ body {
   min-height: 10cem;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   margin: 5px;
 }
@@ -31,7 +33,4 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-#cidade {
 }

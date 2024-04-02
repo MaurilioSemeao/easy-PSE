@@ -1,5 +1,12 @@
 const ctx = document.getElementById("cidades");
 
+let cor = [
+  "rgb(255, 99, 132)",
+  "rgb(54, 162, 235)",
+  "rgb(255, 205, 86)",
+  "rgb(75, 192, 192)",
+];
+
 class Residencia {
   getChat(labels, data, title) {
     new Chart(ctx, {
@@ -12,12 +19,7 @@ class Residencia {
             data: data,
             borderWidth: 3,
             borderColor: "rgba(0, 0, 0)",
-            backgroundColor: [
-              "rgb(255, 99, 132)",
-              "rgb(54, 162, 235)",
-              "rgb(255, 205, 86)",
-              "rgb(75, 192, 192)",
-            ],
+            backgroundColor: cor,
           },
         ],
       },
